@@ -1,0 +1,13 @@
+{
+  "name": "telegram-bot-on-vercel",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Simple Telegram bot running as a Vercel Function (webhook mode)",
+  "scripts": {
+    "dev": "vercel dev",
+    "deploy": "vercel --prod"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
