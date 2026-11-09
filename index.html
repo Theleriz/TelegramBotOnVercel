@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Telegram bot on Vercel</title>
+  <style>
+    body { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; max-width: 640px; margin: 48px auto; padding: 0 20px; line-height: 1.6; color: #1f2328; }
+    code { background: #f0f1f3; padding: 2px 6px; border-radius: 4px; }
+    .card { border: 1px solid #d9dbdf; border-radius: 10px; padding: 16px 20px; margin: 20px 0; }
+    a { color: #0969da; }
+  </style>
+</head>
+<body>
+  <h1>🤖 Telegram bot on Vercel</h1>
+  <p>Это статическая страница деплоя. Если вы её видите — проект и маршрутизация работают.</p>
+
+  <div class="card">
+    <h2>Проверка функций</h2>
+    <ul>
+      <li><a href="/api">/api</a> — статус-страница (какие переменные окружения заданы)</li>
+      <li><code>/api/webhook</code> — сюда пишет Telegram (POST)</li>
+      <li><code>/api/setup?secret=...&amp;action=info</code> — состояние webhook</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>Если /api отдаёт 404</h2>
+    <p>Значит функции не попали в деплой. Проверьте: Settings → <b>Root Directory</b> пустой, Framework Preset — <b>Other</b>,
+    и что задеплоен последний коммит (Deployments → сверьте SHA). После изменений — Redeploy.</p>
+  </div>
+
+  <p>Инструкция: <code>README.md</code> в репозитории.</p>
+</body>
+</html>
